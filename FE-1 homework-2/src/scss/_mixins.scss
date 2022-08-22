@@ -1,0 +1,61 @@
+@mixin header-nav-titles {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 22px;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  color: $grey;
+}
+
+@mixin h2-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto", sans-serif;
+  color: $grey;
+  margin-bottom: 24px;
+}
+
+@mixin h3-title {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 22px;
+  font-family: "Roboto", sans-serif;
+  color: $grey;
+  margin-bottom: 24px;
+}
+
+@mixin card-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21px;
+  width: 398px;
+}
+
+@mixin card-header {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  color: $grey;
+}
+
+@mixin image-information {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  color: $image-grey;
+}
+
+@mixin card-content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 13px;
+  color: $card-content-color;
+}

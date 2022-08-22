@@ -1,0 +1,82 @@
+@import "_mixins.scss";
+@import "_vars.scss";
+
+.footer {
+  background-color: $black;
+  margin-top: 45px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.footer-wrapper {
+  margin: auto;
+  max-width: 1170px;
+
+  h2 {
+    @include h2-title;
+    color: $white;
+    text-align: center;
+    padding-top: 66px;
+    padding-bottom: 22px;
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 14px;
+      padding-top: 38px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    h2 {
+      padding-top: 57px;
+    }
+  }
+
+  div {
+    text-align: center;
+    margin-top: 37px;
+    margin-bottom: 34px;
+  }
+}
+
+.footer-wrapper:nth-child(1) {
+  max-width: 684px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: auto;
+  text-align: center;
+  color: $footer-grey;
+}
+
+.footer-wrapper:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin: auto;
+  text-align: center;
+  color: $footer-grey;
+  padding-bottom: 70px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer-wrapper:last-child {
+    padding-bottom: 57px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-wrapper:last-child,
+  .footer-wrapper:nth-child(1) {
+    font-size: 14px;
+  }
+  .footer-wrapper:last-child {
+    padding-bottom: 47px;
+  }
+}

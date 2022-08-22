@@ -1,0 +1,156 @@
+
+.background{
+    width: 1028px;
+    margin: auto;
+    background-image: url("../images/Fon-size.png");
+    background-size: 100%;
+}
+.header-menu{
+display: flex;
+justify-content:space-between;
+}
+
+.logo{
+    margin-top: 51px;
+    margin-bottom: 26px;
+    display: flex;
+    text-decoration: none;
+}
+.logo:hover .logo-text{
+    color: #F26522;
+}
+.logo:hover img{
+    content: url("../images/Milan-logo\ 2.svg");
+    color: #F26522;
+}
+.logo-information{
+  margin-left: 8px;
+}
+.logo-text{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 18px;
+}
+.header-text{
+    color: #FFFFFF;
+    font-size: 29px;
+    line-height: 29px;
+}
+.contacts-information-mail,
+.contacts-information-tel{
+    display: block;
+    text-align: end;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.contacts-information-mail{
+    margin-top: 46px;
+    margin-bottom: 19px;
+}
+.contacts-information-tel{
+    margin-bottom: 17px;
+}
+.contacts-information-mail:hover{
+    color: #F26522;
+}
+
+.contacts-information-tel:hover{
+    color: #F26522;
+}
+.main-contant{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.shopping-tours:hover .image-hover,
+.food-tours:hover .image-hover,
+.sightseeing-tours:hover .image-hover,
+.bars-nightlife:hover .image-hover,
+.art-architecture:hover .image-hover,
+.walking-tours:hover .image-hover{
+    opacity: 1;
+}
+.shopping-tours:hover .text,
+.food-tours:hover .text,
+.sightseeing-tours:hover .text,
+.bars-nightlife:hover .text,
+.art-architecture:hover .text,
+.walking-tours:hover .text{
+    color: #F26522;
+}
+.text{
+    height: auto;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.shopping-tours,
+.sightseeing-tours,
+.food-tours{
+    position: relative;
+	overflow: hidden;
+    margin-bottom: 37px;
+    text-decoration: none;
+}
+.bars-nightlife,
+.walking-tours,
+.art-architecture{
+    position: relative;
+	overflow: hidden;
+    margin-bottom: 49px;
+    text-decoration: none;
+}
+.image-hover{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    width: 305px;
+    top: 165px;
+    background-color: #F26522;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.hover-text-left{
+    display: inline-block;
+    font-size: 10px;
+    line-height: 10px;
+    color: #FFFFFF;
+    margin-top: 7px;
+    margin-left: 16px;
+    margin-bottom: 12px;
+}
+.hover-text-right{
+    display: inline-block;
+    align-self: flex-end;
+    padding-right: 37px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+.hover-image{
+    margin-left: 16px;
+}
+.hover-text-right::after{
+   content: url(../images/after-el.svg); 
+   margin-left: 16px;
+}
+.hover-text-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.footer-text{
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}

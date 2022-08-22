@@ -1,0 +1,29 @@
+{
+  "name": "fe-1-homework-1",
+  "version": "1.0.0",
+  "description": "homework-project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/nikitaperkovskij/danit-homeworks2.git"
+  },
+  "author": "Nikita Perkovskiy (e_1_online)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/nikitaperkovskij/danit-homeworks2/issues"
+  },
+  "homepage": "https://gitlab.com/nikitaperkovskij/danit-homeworks2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "eslint": "^8.18.0",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "moment": "^2.29.3"
+  }
+}

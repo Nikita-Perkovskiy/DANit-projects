@@ -1,0 +1,198 @@
+@import "_mixins.scss";
+@import "_vars.scss";
+
+.header {
+  margin: auto;
+  max-width: 1170px;
+  border: none;
+}
+
+.header__bar-wrapper {
+  position: relative;
+  border: none;
+  max-width: 813px;
+  margin: auto;
+}
+
+.header__nav-bar-active {
+  transition: 20ms;
+  position: absolute;
+  width: 182px;
+  height: 208px;
+  top: 62px;
+  right: 28px;
+  background-color: $nav-bar-active;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+.header__nav-title-active {
+  @include header-nav-titles;
+  justify-self: flex-start;
+  padding-left: 14px;
+  &:hover {
+    background-color: $nav-bar-title-hover;
+  }
+}
+
+.header-navicon-a {
+  display: none;
+  position: absolute;
+  width: 44px;
+  height: 37px;
+  background-color: $black;
+  top: 25px;
+  right: 28px;
+  border: none;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    border-top: 2px $white solid;
+    border-bottom: 2px $white solid;
+    left: 13px;
+    top: 13px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: $white;
+    left: 13px;
+    top: 21px;
+  }
+}
+
+.header-navicon-b {
+  display: none;
+  position: absolute;
+  width: 44px;
+  height: 37px;
+  background-color: $black;
+  top: 25px;
+  right: 28px;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: $white;
+    left: 13px;
+    top: 18px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: $white;
+    left: 13px;
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-navicon-a {
+    display: block;
+    position: absolute;
+    width: 44px;
+    height: 37px;
+    background-color: $black;
+    top: 25px;
+    right: 28px;
+    border: none;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 2px;
+      border-top: 2px $white solid;
+      border-bottom: 2px $white solid;
+      left: 13px;
+      top: 13px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 2px;
+      background-color: $white;
+      left: 13px;
+      top: 21px;
+    }
+  }
+}
+
+.header__nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 45px;
+  padding-bottom: 51px;
+}
+
+@media (max-width: 768px) {
+  .header__nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    max-width: 813px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    margin: auto;
+    opacity: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .header__nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-bottom: 51px;
+    margin-left: 80px;
+    margin-right: 92px;
+    width: calc(100% - 172px);
+  }
+}
+
+.header__nav-title {
+  @include header-nav-titles;
+}
+
+.header__nav-title--active {
+  color: $blue;
+}
+
+.header__image {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .header__image {
+    margin-left: 80px;
+    margin-right: 92px;
+    width: calc(100% - 172px);
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__image {
+    margin-left: 25px;
+    margin-right: 28px;
+    width: calc(100% - 53px);
+    height: auto;
+  }
+}

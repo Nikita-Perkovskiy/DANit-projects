@@ -1,0 +1,339 @@
+.background{
+    background-image: url(../images/background-image.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   font-family: 'Ubuntu', sans-serif;
+   
+}
+.header-menu{
+    display: flex;
+    justify-content: flex-between;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+.header-slogo{
+   padding-right: 704px;
+    align-self: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 74px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.header-slogo:hover{
+    color: #3CB878;
+}
+.header-wrapper{
+    display: flex;
+}
+.header-calendar,
+.header-mail,
+.header-compas,
+.header-text{
+    align-self: center;
+}
+.header-calendar{
+    padding-right: 27px;
+}
+.header-mail{
+    padding-right: 24px;
+}
+.header-compas{
+    padding-right: 25px;
+}
+.calendar-icon:hover path{
+    fill: #3CB878;
+}
+.mail-icon:hover path{
+    fill: #3CB878;
+}
+.compas-icon:hover path{
+    fill: #3CB878;
+}
+.header-text::before{
+    content: "";
+    width: 19px;
+    height: 19px;
+    border-left: 1px solid #FFFFFF;
+    opacity: 50%;
+    margin-right: 27px;
+}
+.header-text{
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+.header-text-hover:hover{
+    color: #3CB878;
+}
+.login-menu{
+position: relative;
+Width: 444px;  
+display: flex;
+flex-direction: column;
+background-color:#FFFFFF;
+text-align: center;
+margin-top: 54px;
+margin-bottom: 74px;
+margin-left: auto;
+margin-right: auto;
+}
+.decoration-element{
+position: absolute;
+width: 18px;
+height: 18px;
+background-color: #3CB878;
+top: 29px;
+}
+
+.login-menu-header{
+    display:flex;
+    justify-content: space-between;
+}
+.logo-menu{
+    margin-left: 42px;
+    margin-top: 31px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #434343;
+}
+.menu-header-item{
+    font-size: 14px
+    line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #3CB878;
+    margin: 31px 60px 14px 0px;
+}
+.menu-header-item:hover{
+    color: #01813F;
+    text-decoration: underline;
+}
+.facebook-buttom{
+    width: 160px;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    width:  160px;
+    height: 48px;
+    margin: auto;
+    background-color: #305DB8;
+    border-radius: 2px;
+    margin-right: 16px;
+    border: none;
+}
+.facebook-buttom:hover{
+    background-color:#022263 ;
+}
+.google-buttom{
+    width: 160px;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    width:  160px;
+    height: 48px;
+    background-color: #DF4A32;
+    border-radius: 2px;
+    border: none;
+}
+.google-buttom:hover{
+    background-color: #AB1F09;
+}
+.facebook-text,
+.google-text{
+    position: relative;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: end;
+    border: 0px, solid, #FFFFFF;
+} 
+.fa-google-plus-g{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.google-wrapper{
+    display: inline-block;
+    position: absolute;
+    left: 16.77px;
+    bottom: 12px;
+}
+.facebook-element{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.facebook-wrapper{
+ display: inline-block;
+ position: absolute;
+ left: 12px;
+ bottom: 12px;
+}
+.facebook-text::before,
+.google-text::before{
+    content: '';
+	position: absolute;
+	top: 50%;
+	width: 1px;
+	height: 28px;
+	background-color: #2B0D09;
+	transform: translateY(-50%);
+    opacity: 10%;
+}
+.facebook-text::before{
+left: 38px;
+}
+.google-text::before{
+left: 48px;
+}
+.facebook-text{
+    padding-right: 22px;
+}
+.google-text{
+    padding-right: 27px;
+}
+.menu-item-element{
+    position: relative;
+    margin-top: 31px;
+    margin-bottom: 11.96px;
+    color: #848484;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.menu-item-element::after{
+    content: '';
+    right: 62px;
+	position: absolute;
+	top: 50%;
+	width: 152px;
+	height: 1px;
+	background-color: #919191;
+	transform: translateY(-50%);
+}
+.menu-item-element::before{
+    content: '';
+    left: 62px;
+	position: absolute;
+	top: 50%;
+	width: 152px;
+	height: 1px;
+	background-color: #919191;
+	transform: translateY(-50%);
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+.first-name-text{
+    outline: none;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 15px;
+    transition-property: box-shadow;
+}
+.first-name-text:focus,
+.last-name-text:focus,
+.email-text:focus,
+.choose-password-text:focus,
+.confirm-password-text:focus{
+    box-shadow: 0px  3px 3px 3px rgba(0, 0, 0, 0.21); 
+}
+.first-name-text::placeholder,
+.last-name-text::placeholder,
+.email-text::placeholder,
+.choose-password-text::placeholder,
+.confirm-password-text::placeholder{
+    color: #BEBEBE;
+}
+.last-name-text{
+    outline: none;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.email-text{
+    outline: none;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 15px;
+    margin-top: 15.96px;
+}
+
+.choose-password-text{
+    outline: none;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 15px;
+}
+.confirm-password-text{
+    outline: none;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 15px;
+}
+.text-item-form{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom:  20px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.checkbox{
+    justify-self: start;
+    padding-right: 11px;
+}
+.checkbox-text{
+    margin-left: 11px;
+}
+.checkbox-text-element{
+   color: rgba(60, 184, 120, 0.8);
+}
+.checkbox-text-element:hover{
+    color: #01813F;
+    text-decoration: underline;
+}
+.form-button{
+    margin-bottom: 54px;
+    border: 0px solid  #FFFFFF;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: rgba(60, 184, 120, 0.8);
+    color: #FFFFFF;
+}
+.form-button:hover{
+    background-color: #01813F;
+}

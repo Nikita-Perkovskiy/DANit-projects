@@ -1,0 +1,82 @@
+.card {
+  height: 270px;
+  width: 270px;
+  border: 2px black solid;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 7%;
+  position: relative;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  padding-top: 25%;
+}
+
+.card__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  height: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.card__but-wrapper {
+  margin-left: none;
+  margin-right: none;
+}
+
+.card__but-wrapper-button-reduction,
+.card__but-wrapper-button {
+  font-family: "Roboto", sans-serif;
+  border: 2px black solid;
+  height: 90px;
+  width: 125px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 7%;
+  color: black;
+}
+
+.card__but-wrapper-button:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.card__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+}
+.card__close:before,
+.card__close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 3px;
+  background-color: black;
+}
+.card__close:before {
+  transform: rotate(45deg);
+}
+.card__close:after {
+  transform: rotate(-45deg);
+}
+.card-section-a {
+  width: 1200px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5em;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Serif", serif;
+}
